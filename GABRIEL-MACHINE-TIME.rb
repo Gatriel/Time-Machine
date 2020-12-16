@@ -1,5 +1,7 @@
 ################################################### TIME MACHINE #############################################################
-#GABRIEL-MACHINE-TIME  00:41:26-16/12/2020 
+
+#GABRIEL-MACHINE-TIME  00:41:26-16/12/2020
+#code written by Gabriel Conte
 #this programs aims to parse a json file and rewrite it into a desired format
 require "json"
 
@@ -10,7 +12,7 @@ parsed = JSON.parse(payload) #parses the string
 
 #Parses the json file into the desired format
 
-File.open("exit.json","w") do |file| #saves the parse result into a file
+File.open("exit.json","w") do |file| #saves the parse result into a file, essentialy organizing it into a new JSON
   file.write("{\n \"id\": " +   parsed["id"].to_s +
     "\n \"recorded_at\": "+  "\""+ parsed["recorded_at"]+"\""+
      "\n \"status\": "+"\""+ parsed["status"]+"\""+
