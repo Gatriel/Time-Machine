@@ -1,6 +1,6 @@
 ################################################### TIME MACHINE #############################################################
 
-#GABRIEL-MACHINE-TIME  09:41:26-16/12/2020
+#GABRIEL-MACHINE-TIME  14:22:26-16/12/2020
 #code written by Gabriel Conte
 #this programs aims to parse a json file and rewrite it into a desired format
 require "json"
